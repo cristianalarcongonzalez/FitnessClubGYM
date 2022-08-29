@@ -90,7 +90,6 @@ $Usuario = $_SESSION['Usuario'];
 										<th>Direccion</th>
 										<th>Eliminar </th>
 										<th> Editar </th>
-										
 										<th>Facturar </th>
 									</tr>
 								</thead>

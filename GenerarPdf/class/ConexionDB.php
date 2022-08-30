@@ -1,5 +1,5 @@
 <?php
-Class ConexionNomina {
+Class ConexionDB {
 
    public function conectar(){
       $mysqli = new mysqli('localhost','root','','bdfitnessclubgym');
@@ -14,7 +14,7 @@ Class ConexionNomina {
 
 
    public static function ruta() {
-      return "http://localhost/FitnessClubGYM/InformeGimnasio/";
+      return "http://localhost/FitnessClubGYM/GenerarPdf/";
       
    }
 

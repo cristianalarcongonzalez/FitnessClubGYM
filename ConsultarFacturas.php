@@ -85,7 +85,7 @@ $Usuario = $_SESSION['Usuario'];
 											<td><?php echo $row['FechaRegistro']; ?></td>
 											<td><?php echo $row['FechaFin']; ?></td>
 											<td>
-												<a href="InformeGimnasio/GenPdf.php?id=<?php echo $row['CodigoFactura'] ?>" class="btn btn-warning">
+												<a href="GenerarPdf/GenPdf.php?id=<?php echo $row['CodigoFactura'] ?>" class="btn btn-warning">
 													<i class="fas fa-marker"></i>
 												</a>
 											</td>	

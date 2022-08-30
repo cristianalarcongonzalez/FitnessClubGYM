@@ -1,6 +1,6 @@
 <?php
-require_once 'ConexionNomina.php';
-class Docente extends ConexionNomina {
+require_once 'ConexionDB.php';
+class facturapdf extends ConexionDB {
 
     public $mysqli;
     public $data;
@@ -10,7 +10,7 @@ class Docente extends ConexionNomina {
         $this->data = array();
     }
 
-    public function Docentes(){
+    public function facturapdf(){
         $resultado = $this->mysqli->query("SELECT * FROM facturas");
 
         while( $fila = $resultado->fetch_assoc() ){
@@ -23,7 +23,7 @@ class Docente extends ConexionNomina {
         
     }
 
-    public function DocenteIdentificacion($id){
+    public function ClienteIdentificacion($id){
 
         $consulta = sprintf("SELECT
             *

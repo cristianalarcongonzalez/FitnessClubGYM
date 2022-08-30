@@ -1,6 +1,6 @@
 <?php
 require('fpdf/fpdf.php');
-require("class/Docente.php");
+require("class/GenFactura.php");
 
 
 //pdf
@@ -186,8 +186,8 @@ function LoadData($file)
 
 //$link = mysqli_connect('localhost','root','','bdfitnessclubgym');
 $CodigoFactura= $_GET['id'];
-$objdocente = new Docente();
-$docente = $objdocente->DocenteIdentificacion($CodigoFactura);
+$objfactura = new facturapdf();
+$factura = $objfactura->ClienteIdentificacion($CodigoFactura);
 $pdf=new Pdf();
 
 $pdf->AddPage();
@@ -211,23 +211,23 @@ $pdf->SetFont('Arial','',12);
 $pdf->SetFillColor(33,222,22);
 $pdf->Cell(35,10,'Codigo factura:   ',1,0);
 $pdf->SetFillColor('25','25','22');
-$pdf->Cell(0,10,$docente['CodigoFactura'],1,1);
+$pdf->Cell(0,10,$factura['CodigoFactura'],1,1);
 $pdf->Cell(35,10,'Identificacion: ',1,0);
-$pdf->Cell(0,10,$docente['Identificacion'],1,1);
+$pdf->Cell(0,10,$factura['Identificacion'],1,1);
 $pdf->Cell(35,10,'Nombre: ',1,0);
-$pdf->Cell(0,10,$docente['PrimerNombre'].' '.$docente['PrimerApellido'].' '.$docente['SegundoApellido'],1,1);
+$pdf->Cell(0,10,$factura['PrimerNombre'].' '.$factura['PrimerApellido'].' '.$factura['SegundoApellido'],1,1);
 $pdf->Cell(35,10,'Sexo: ',1,0);
-$pdf->Cell(0,10,$docente['Sexo'],1,1);
+$pdf->Cell(0,10,$factura['Sexo'],1,1);
 $pdf->Cell(35,10,'Suscripcion: ',1,0); 
-$pdf->Cell(135,10,$docente['TipoSuscripcion'],1,1);
+$pdf->Cell(135,10,$factura['TipoSuscripcion'],1,1);
 $pdf->Cell(35,10,'Cantidad: ',1,0); 
-$pdf->Cell(0,10,$docente['Cantidad'],1,1);
+$pdf->Cell(0,10,$factura['Cantidad'],1,1);
 $pdf->Cell(35,10,'Total: ',1,0); 
-$pdf->Cell(0,10,$docente['Total'],1,1);
+$pdf->Cell(0,10,$factura['Total'],1,1);
 $pdf->Cell(35,10,'FechaRegistro: ',1,0); 
-$pdf->Cell(0,10,$docente['FechaRegistro'],1,1);
+$pdf->Cell(0,10,$factura['FechaRegistro'],1,1);
 $pdf->Cell(35,10,'Fecha Final: ',1,0); 
-$pdf->Cell(0,10,$docente['FechaFin'],1,1);
+$pdf->Cell(0,10,$factura['FechaFin'],1,1);
 
 
 //contactos

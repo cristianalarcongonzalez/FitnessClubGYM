@@ -1,5 +1,5 @@
 <?php
-include("conexionv.php");
+include("Model\conexionv.php");
 if (!isset($_SESSION['Identificacion'])) {
 	header("Location: index.php");
 }

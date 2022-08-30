@@ -40,25 +40,15 @@ if (isset($_GET['Identificacion'])) {
 
 ?>
 <?php include('includes/header.php'); ?>
-
 <?php include('includes/footer.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-	<title>Consultas</title>
-	<link href="css/styles.css" rel="stylesheet" />
-	<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-</head>
+<?php  require_once('V_head.php')?>
+
+
 <main>
   <div class="container-fluid">
-
     <h1 class="mt-2">Generar Factura</h1>
     <ol class="breadcrumb mb-4">
       <li class="breadcrumb-item"><a href="principal.php">Menu Principal</a></li>
@@ -239,11 +229,9 @@ if (isset($_GET['Identificacion'])) {
               <button type="submit" name="insertafactura" class="btn btn-success"><i
                 class="fa fa-fw fa-lg fa-check-circle"></i>Registrar
               </button>
-
               <button type="button" id="btnLimpiar" class="btn btn-danger"><i
                 class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar
               </button>
-
             </div>
           </form>
         </div>
@@ -253,12 +241,6 @@ if (isset($_GET['Identificacion'])) {
 </div>
 </main>
 </div>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-	<script src="js/scripts.js"></script>
-	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-	<script src="assets/demo/datatables-demo.js"></script>
+<?php require_once('C_Scripts.php')?>
 </body>
-
 </html>

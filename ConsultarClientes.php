@@ -136,16 +136,7 @@ $Usuario = $_SESSION['Usuario'];
 					</div>
 				</div>
 			</main>
-			<footer class="py-4 bg-light mt-auto">
-				<div class="container-fluid">
-					<div class="d-flex align-items-center justify-content-between small">
-						<div class="text-muted">Copyright &copy; Creado por K&K 2022</div>
-						<div>
-							<a href="Politicas.php">Politicas de privacidad</a>
-						</div>
-					</div>
-				</div>
-			</footer>
+			<?php require_once('V_Footer_Dev.php')?>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>

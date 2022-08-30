@@ -11,8 +11,9 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-dark bg-warning">
-    <div class="container">
-      <a class="navbar-brand" href="principal.php">VOLVER A MENU PRINCIPAL</a>
-    </div>
-  </nav>
+<nav class="navbar navbar-light " style="background-color: #163076;">
+  <a class="navbar-brand">
+    <img src="InformeGimnasio\logogym.png" width="50" height="50" class="d-inline-block align-top" alt="logogym">
+     Menu Principal
+  </a>
+</nav>

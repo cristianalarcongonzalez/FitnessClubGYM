@@ -7,7 +7,7 @@
         <li data-target="#demo" data-slide-to="2" class="active"></li>
     </ul>
 
-    <div class="carousel-inner">
+    <div class="carousel-align-center">
         <div class="carousel-item active">
             <img src="1.jpeg" alt="Imagen Mujer" width="820" height="800">
         </div>

@@ -124,7 +124,7 @@ $Usuario = $_SESSION['Usuario'];
 											</td>
 
 											<td>
-												<a href="FacturaTotal.php?Identificacion=<?php echo $row['Identificacion'] ?>" class="btn btn-warning">
+												<a href="Facturar.php?Identificacion=<?php echo $row['Identificacion'] ?>" class="btn btn-warning">
 												<i class="fas fa-user-edit"></i>
 												</a>
 											</td>

@@ -59,7 +59,7 @@ if (isset($_GET['Identificacion'])) {
 <main>
   <div class="container-fluid">
 
-    <h1 class="mt-4">Generar Factura</h1>
+    <h1 class="mt-2">Generar Factura</h1>
     <ol class="breadcrumb mb-4">
       <li class="breadcrumb-item"><a href="principal.php">Menu Principal</a></li>
       <li class="breadcrumb-item active">Facturación</li>

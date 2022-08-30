@@ -167,30 +167,42 @@ $TipoSuscripcion = $result_tasks;
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <img src="gym3.png" width="540" height="280">        
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                             <img src="gym1.jpg" width="540" height="280">   
-                         </div>
-                     </div>
-                 </div>
 
+
+
+                    
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1" class="active"></li>
+    <li data-target="#demo" data-slide-to="2" class="active"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.jpeg" alt="Imagen Mujer" width="820" height="800">
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpeg" alt="Imagen Hombre" width="820" height="800">
+    </div>
+  </div>
+
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
              </main>
              <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Creado por K&K 2022</div>
+                        <div class="text-muted">Copyright &copy; Creado por dev kbgeptupsi 2022</div>
                     </div>
                 </div>
             </footer>

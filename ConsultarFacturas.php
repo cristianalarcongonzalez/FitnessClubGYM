@@ -49,8 +49,11 @@ $Usuario = $_SESSION['Usuario'];
 					<div class="card-body">En esta sección podra encontrar información de las facturas registradas en el sistema.</div>
 				</div>
 				<form class="form-inline">
+				
 					<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+					<?php $query = "SELECT * FROM facturas where $Identificacion = 'Identificacion'";?>
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+
 				</form>
 				<div class="card-body">
 					<div class="table-responsive">

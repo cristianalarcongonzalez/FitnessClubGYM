@@ -25,12 +25,10 @@ $TipoSuscripcion = $result_tasks;
                                     <?php require_once('V_TotalesRegistrados.php');?>
                                     </div>
                                 </div>
-                       div> </
+                    
                     </div>
-
-                    <div>
-                    <?php require_once('V_Carrousel.php');?>
-                    </div>
+                   
+                    
                    
              </main>
              <footer class="py-4 bg-light mt-auto">

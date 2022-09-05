@@ -12,8 +12,8 @@
 <body>
 
 <nav class="navbar navbar-light " style="background-color: #163076;">
-  <a class="navbar-brand">
-    <img src="InformeGimnasio\logogym.png" width="50" height="50" class="d-inline-block align-top" alt="logogym">
-     Menu Principal
+  <a class="navbar-brand" style="color:aliceblue">
+    <img src="GenerarPdf\logogym.png" width="50" height="50" class="d-inline-block align-top" alt="logogym">
+    Menu Principal
   </a>
 </nav>

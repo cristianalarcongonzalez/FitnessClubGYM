@@ -39,16 +39,5 @@ if (isset($_POST['insertacliente'])) {
     </script>"; 
   }
 
-
-  
-
-  }
-
-
-
+}
 ?>
-
-
-
-
-
